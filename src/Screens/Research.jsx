@@ -1,7 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Layout from "../components/Layout";
 
+const furTypes = [
+  {
+    title: "Brindle",
+    description:
+      "This variant is considered the closest to a true wild breed due to its inherent aggressiveness and primitive instincts. It represents the predominant wild-blooded population found across the entire Philippine archipelago.",
+    image: "/brindle.JPG",
+  },
+  {
+    title: "Brown",
+    description:
+      "As the most common variety, this coat spans a wide spectrum, ranging from nearly pure white to deep, dark red-brown hues.",
+    image: "/brown.jpg",
+  },
+  {
+    title: "Black",
+    description:
+      "A known nocturnal hunter, this variant is a night stalker that hunts from behind the shadows. It is nearly as aggressive as the 'Witch Dog' type and is frequently identified by its signature trait: being often bobtailed.",
+    image: "/black.JPG",
+  },
+  {
+    title: "Piebald",
+    description:
+      "This particular Aso subtype is distinguished by a white base coat marked with clear, contrasting patches of brown or black.",
+    image: "/piebald.JPG",
+  },
+  {
+    title: "Merle or Spotted",
+    description:
+      'This variant is definitively classified as a member of the "rare" Witch Dog subtype.',
+    image: "/merle.jpg",
+  },
+];
+
 const History = () => {
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition((prev) => (prev + 1) % furTypes.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout>
       <div
@@ -13,6 +56,9 @@ const History = () => {
             <h1 className="text-5xl sm:text-7xl text-white font-bold text-shadow-lg/10">
               Meet the Asong Gubat
             </h1>
+            <p className="mt-4 text-xl text-white text-shadow-lg/10">
+              The Dog, The Myth, The Legend
+            </p>
           </div>
         </div>
       </div>
@@ -98,10 +144,10 @@ const History = () => {
             className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 object-cover rounded-lg md:rounded-none"
           />
           <div className="w-full md:w-1/2 text-left md:text-right">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-3 md:mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-3 md">
               Unique Traits
             </h2>
-            <p className="text-neutral-900 text-base md:text-lg leading-relaxed">
+            <p className="text-neutral-900 text-base leading-relaxed">
               It possesses a distinct, alleged ability to howl—a characteristic
               tied to their length. Its howl is notably unique. Pioneer
               researcher Tom Asmus recorded its vocalization as a form of
@@ -112,10 +158,10 @@ const History = () => {
 
         <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-8 px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12">
           <div className="w-full md:w-1/2 text-left">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-3 md:mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-3 md">
               Cultural Significance
             </h2>
-            <p className="text-neutral-900 text-base md:text-lg leading-relaxed">
+            <p className="text-neutral-900 text-base leading-relaxed">
               For the Monobo Tribe, the Asong Gubat is revered as a loyal
               companion to Babaylans (shamans) and is even considered a forest
               spirit whose howl announces or invites death. The belief that the
@@ -130,7 +176,7 @@ const History = () => {
           />
         </div>
 
-        <div className="p-8 sm:p-16 space-y-8">
+        <div className="p-8 sm:p-16 space-y-14">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold text-center text-neutral-900">
               Classifications of the Asong Gubat
@@ -142,139 +188,337 @@ const History = () => {
             </p>
           </div>
 
-          <div className="space-y-6 text-justify rounded-2xl text-neutral-50 sm:text-base md:text-lg lg:text-xl px-8 bg-lime-800">
-            <ul className="list-disc list-inside space-y-4 py-6">
-              <li>
-                <span className="font-bold">Jungle Type</span>: Characterized as
-                a lean-built landrace—meaning a local variety developed and
-                adapted over time—the dog typically features a red dominant
-                brindle coat. Key physical traits are its symmetrical,
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+            <div className="w-full md:w-1/2 text-left md:text-right">
+              <h2 className="text-3xl font-bold text-neutral-900">Jungle</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                Characterized as a lean-built landrace—meaning a local variety
+                developed and adapted over time—the dog typically features a red
+                dominant brindle coat. Key physical traits are its symmetrical,
                 leaf-shaped ears and a thin, long tail.
-              </li>
-              <li>
-                <span className="font-bold">Mountain Type</span>: This variant
-                has a heavy or sturdy build and is distinguished by a dominantly
-                black brindle coat. Key features include the largest ears
-                (either with a straight inner edge or entirely drop-eared) and a
-                thick, short tail.
-              </li>
-              <li>
-                <span className="font-bold">Tribal Type</span>: Characterized by
-                a tribal/mountain landrace body, this variant often displays
-                distinct markings, such as a black dominant merle (mottled) or
-                spotted coat. Its head features either symmetrical leaf-shaped
-                or trapezoid-shaped ears, balanced by a thin tail.
-              </li>
-              <li>
-                <span className="font-bold">Rare Type</span>: This variant
-                exhibits the greatest physical range, from a heavy to lean build
-                and medium to miniature size. Its coat is highly diverse,
-                including piebald, tan, cream, sable, black, or bi-color
-                patterns, with textures from long-haired to double-coated. It
-                typically features symmetrical, leaf-shaped ears and can present
-                with a thin, thick, or bobtail.
-              </li>
-            </ul>
+              </p>
+            </div>
+            <img
+              src="/jungle.png"
+              alt="Asong Gubat - Jungle"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
           </div>
-          <p className="text-justify text-neutral-900 sm:text-base md:text-lg lg:text-xl">
-            In his research, Tom Asmus found that cross-variant dogs are
-            commonly referred to as "tribal." Lacking traditional genealogical
-            records, he asserted that ear shape is the most reliable feature for
-            determining the lineage and heritage of the diverse Aso species.
-            Although there are already known variants, he also noted the
-            different body types of an Aso species.
-          </p>
-        </div>
-
-        <div>
-          <div className="w-full bg-orange-100">
-            <div className="flex flex-col sm:flex-row items-center justify-center py-16 space-x-8">
-              <img
-                src="/research2.JPG"
-                alt="References"
-                className="w-96 h-auto object-cover"
-              />
-              <div className="space-y-6 text-justify text-neutral-900 sm:text-base md:text-lg lg:text-xl px-8">
-                <ul className="list-none space-y-4 py-6">
-                  <li>
-                    <span className="font-bold">Jungle</span>: This specialized
-                    type possesses a tall, slender profile built for speed and
-                    power. Its distinctive anatomy—featuring a large dip in the
-                    spine behind the shoulders and long hip bones—facilitates
-                    its leaper and lunger hunting style. The profile is
-                    completed by a thin, elongated skull.
-                  </li>
-                  <li>
-                    <span className="font-bold">Mountain</span>: Representing
-                    over 75% of the population, this is the most common Asong
-                    Gubat type. It has a midsized, sturdy body profile
-                    structurally adapted for challenging environments. Key
-                    climbing features include a mid dip in the spine and long
-                    hip bones specifically designed for climbing rugged terrain.
-                  </li>
-                  <li>
-                    <span className="font-bold">Lowland</span>: This variant is
-                    defined by an agile structure that facilitates movement. It
-                    features a wide and smoothly curved spine and a wedge-shaped
-                    skull. Its layered body is designed for superior
-                    performance, enabling the dog to both climb and leap
-                    effectively.
-                  </li>
-                  <li>
-                    <span className="font-bold">Dwarf</span>: This short-legged
-                    variant is renowned as a powerful digger, capable of
-                    excavating ground prey like lizards and rodents even in
-                    areas with a low center of gravity. Commonly raised by the
-                    Igorot people in Northern Luzon for hunting, this dog
-                    typically presents with a wedge-shaped skull and a coat that
-                    is cream/creme, black bobtail, or brindle.
-                  </li>
-                </ul>
-              </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img
+              src="/mountain.png"
+              alt="Asong Gubat - Mountain"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+            <div className="w-full md:w-1/2 text-left">
+              <h2 className="text-3xl font-bold text-neutral-900">Mountain</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                This variant has a heavy or sturdy build and is distinguished by
+                a dominantly black brindle coat. Key features include the
+                largest ears (either with a straight inner edge or entirely
+                drop-eared) and a thick, short tail.
+              </p>
             </div>
           </div>
-          <div className="py-8 px-16 space-y-8">
-            <p className="text-justify text-neutral-900 sm:text-base md:text-lg lg:text-xl">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+            <div className="w-full md:w-1/2 text-left md:text-right">
+              <h2 className="text-3xl font-bold text-neutral-900">Tribal</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                Characterized by a tribal/mountain landrace body, this variant
+                often displays distinct markings, such as a black dominant merle
+                (mottled) or spotted coat. Its head features either symmetrical
+                leaf-shaped or trapezoid-shaped ears, balanced by a thin tail.
+              </p>
+            </div>
+            <img
+              src="/tribal.png"
+              alt="Asong Gubat - Tribal"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img
+              src="/rare.png"
+              alt="Asong Gubat - Rare"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+            <div className="w-full md:w-1/2 text-left">
+              <h2 className="text-3xl font-bold text-neutral-900">Rare</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                This variant exhibits the greatest physical range, from a heavy
+                to lean build and medium to miniature size. Its coat is highly
+                diverse, including piebald, tan, cream, sable, black, or
+                bi-color patterns, with textures from long-haired to
+                double-coated. It typically features symmetrical, leaf-shaped
+                ears and can present with a thin, thick, or bobtail.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-8 sm:p-12 space-y-14">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold text-center text-neutral-900">
+              Body Types of Asong Gubat
+            </h1>
+
+            <p className="text-center text-neutral-700 text-lg">
+              In his research, Tom Asmus found that cross-variant dogs are
+              commonly referred to as "tribal." Lacking traditional genealogical
+              records, he asserted that ear shape is the most reliable feature
+              for determining the lineage and heritage of the diverse Aso
+              species. Although there are already known variants, he also noted
+              the different body types of an Aso species.
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img
+              src="/body_jungle.png"
+              alt="Asong Gubat - Jungle"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+            <div className="w-full md:w-1/2 text-left">
+              <h2 className="text-3xl font-bold text-neutral-900">Jungle</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                This specialized type possesses a tall, slender profile built
+                for speed and power. Its distinctive anatomy—featuring a large
+                dip in the spine behind the shoulders and long hip
+                bones—facilitates its leaper and lunger hunting style. The
+                profile is completed by a thin, elongated skull.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+            <div className="w-full md:w-1/2 text-left md:text-right">
+              <h2 className="text-3xl font-bold text-neutral-900">Mountain</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                Representing over 75% of the population, this is the most common
+                Asong Gubat type. It has a midsized, sturdy body profile
+                structurally adapted for challenging environments. Key climbing
+                features include a mid dip in the spine and long hip bones
+                specifically designed for climbing rugged terrain.
+              </p>
+            </div>
+            <img
+              src="/body_mountain.png"
+              alt="Asong Gubat - Mountain"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img
+              src="/body_lowland.png"
+              alt="Asong Gubat - Lowland"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+            <div className="w-full md:w-1/2 text-left">
+              <h2 className="text-3xl font-bold text-neutral-900">Lowland</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                This variant is defined by an agile structure that facilitates
+                movement. It features a wide and smoothly curved spine and a
+                wedge-shaped skull. Its layered body is designed for superior
+                performance, enabling the dog to both climb and leap
+                effectively.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+            <div className="w-full md:w-1/2 text-left md:text-right">
+              <h2 className="text-3xl font-bold text-neutral-900">Dwarf</h2>
+              <p className="text-neutral-900 text-base leading-relaxed">
+                This short-legged variant is renowned as a powerful digger,
+                capable of excavating ground prey like lizards and rodents even
+                in areas with a low center of gravity. Commonly raised by the
+                Igorot people in Northern Luzon for hunting, this dog typically
+                presents with a wedge-shaped skull and a coat that is
+                cream/creme, black bobtail, or brindle.
+              </p>
+            </div>
+            <img
+              src="/body_dwarf.png"
+              alt="Asong Gubat - Dwarf"
+              className="w-56 object-cover rounded-lg md:rounded-none"
+            />
+          </div>
+        </div>
+
+        <div className="p-8 sm:p-12 space-y-16 overflow-hidden">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold text-center text-neutral-900">
+              Fur Types of Asong Gubat
+            </h1>
+            <p className="text-center text-neutral-700 text-lg">
               Beyond the various body structures, the Asong Gubat also displays
               a remarkable aesthetic range—a vibrant spectrum of coats noted
               across the species.
             </p>
-            <div className="space-y-6 text-justify rounded-2xl text-neutral-700 sm:text-base md:text-lg lg:text-xl px-8 bg-neutral-300">
-              <ul className="list-disc list-inside space-y-4 py-6">
-                <li>
-                  <span className="font-bold">Brindle</span>: This variant is
-                  considered the closest to a true wild breed due to its
-                  inherent aggressiveness and primitive instincts. It represents
-                  the predominant wild-blooded population found across the
-                  entire Philippine archipelago.
-                </li>
-                <li>
-                  <span className="font-bold">Brown</span>: As the most common
-                  variety, this coat spans a wide spectrum, ranging from nearly
-                  pure white to deep, dark red-brown hues.
-                </li>
-                <li>
-                  <span className="font-bold">Black</span>: A known nocturnal
-                  hunter, this variant is a night stalker that hunts from behind
-                  the shadows. It is nearly as aggressive as the "Witch Dog"
-                  type and is frequently identified by its signature trait:
-                  being often bobtailed.
-                </li>
-                <li>
-                  <span className="font-bold">Piebald</span>: This particular
-                  Aso subtype is distinguished by a white base coat marked with
-                  clear, contrasting patches of brown or black.
-                </li>
-                <li>
-                  <span className="font-bold">Merle or Spotted</span>: This
-                  variant is definitively classified as a member of the "rare"
-                  Witch Dog subtype.
-                </li>
-              </ul>
-            </div>
-            <p className="text-center text-neutral-900 sm:text-base md:text-lg lg:text-xl">
+          </div>
+
+          <div className="relative w-full max-w-6xl mx-auto overflow-hidden">
+            <motion.div
+              className="flex"
+              animate={{ x: `-${position * 33.33}%` }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+            >
+              {[...furTypes, ...furTypes].map((fur, i) => (
+                <div key={i} className="w-72 px-2 flex-shrink-0">
+                  <div className="bg-yellow-950 rounded-2xl p-4 shadow-md h-full flex flex-col">
+                    <img
+                      src={fur.image}
+                      alt={fur.title}
+                      className="w-66 h-66 object-cover rounded-lg"
+                    />
+                    <h3 className="text-center text-lg font-medium text-yellow-100 py-3">
+                      {fur.title}
+                    </h3>
+                    <p className="text-sm text-yellow-50 text-justify">
+                      {fur.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="p-8 sm:p-12 space-y-14">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold text-center text-neutral-900">
+              Tail Structure of Asong Gubat
+            </h1>
+
+            <p className="text-center text-neutral-700 text-lg">
               Moving from fur to form, the Aso species exhibits just as much
               variation in its tails, which serve as crucial identifiers.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src="/MOUNTAINTAIL.png"
+                alt="Asong Gubat Mountain"
+                className="w-56 h-56"
+              />
+              <h3 className="text-center text-neutral-950 font-bold text-lg py-4">
+                Mountain
+              </h3>
+              <p>
+                This variation is marked by a thicker, shorter tail, a build
+                specifically associated with and potentially utilized for
+                powerful pounce hunting.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src="/JUNGLETAIL.png"
+                alt="Asong Gubat Jungle"
+                className="w-56 h-56"
+              />
+              <h3 className="text-center text-neutral-950 font-bold text-lg py-4">
+                Jungle
+              </h3>
+              <p>
+                This variation features a thin and long tail, a physical trait
+                considered ideal for lunge hunting.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src="/BOBTAIL.png"
+                alt="Asong Gubat Bobtail"
+                className="w-56 h-56"
+              />
+              <h3 className="text-center text-neutral-950 font-bold text-lg py-4">
+                Bobtail
+              </h3>
+              <p>
+                A key identifying feature is the shortened, stub kind of tail,
+                which ranges from a quarter to three-quarters the average length
+                and is particularly common in the Black Aso variety.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-8 sm:p-12 space-y-14">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold text-center text-neutral-900">
+              Nail Structure of Asong Gubat
+            </h1>
+
+            <p className="text-center text-neutral-700 text-lg">
+              Finally, extending to the very extremities, the Aso species
+              completes its diverse profile with distinct variations in its claw
+              arches. These arches, which can serve as a blend identifier,
+              include:
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
+              <img src="/jungle_nail.png" alt="Jungle Nail" className="w-36" />
+              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
+                Jungle Type
+              </h3>
+              <p className="text-sm text-yellow-50 text-justify">
+                Characterized by the longest claws with a shallow 30-degree arc.
+              </p>
+            </div>
+            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
+              <img
+                src="/lowland_nail.png"
+                alt="Lowland Nail"
+                className="w-36"
+              />
+              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
+                Lowland Type
+              </h3>
+              <p className="text-sm text-yellow-50 text-justify">
+                Features the shortest claws with a wide 70-degree arc, giving
+                them a feline-like appearance.
+              </p>
+            </div>
+            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
+              <img
+                src="/mountain_nail.png"
+                alt="Mountain Nail"
+                className="w-36"
+              />
+              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
+                Mountain Type
+              </h3>
+              <p className="text-sm text-yellow-50 text-justify">
+                Represents the most common variety, identified by a moderate
+                45-degree arc.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-4">
+          <p className="text-neutral-900 mx-auto text-justify text-lg px-8">
+            The sheer scale of this complexity—from a coat that can be nearly
+            white to a body engineered for climbing rugged terrain, and the
+            debate over a 60,000-year history—proves the Asong Gubat is not just
+            a dog; it is a dynamic, living archive of Philippine heritage. It is
+            this incredible, multifaceted, and still mysterious creature that
+            Adhikain Studios is determined to protect, ensuring the recognition
+            of the Philippine Forest Dog's identity and its right to survival
+            through the compelling power of art.
+          </p>
+        </div>
+      </div>
+      <div
+        className="min-h-screen bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/research3.JPG')" }}
+      >
+        <div className="absolute inset-0 bg-amber-950/30 flex items-center justify-center min-h-screen">
+          <div className="text-center px-4">
+            <p className="mt-4 text-2xl text-white text-shadow-lg/10 italic">
+              "Aso are a very ancient breed, having lived here for 30,000 -
+              150,000 Years that appeared to have ties with the Negrito Tribes
+              which were the first sundaland people who inhabited South East
+              Asia”.<br /><span className="font-bold">- Asmus, 2018</span>
             </p>
           </div>
         </div>
