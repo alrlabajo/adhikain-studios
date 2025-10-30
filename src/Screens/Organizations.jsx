@@ -33,7 +33,7 @@ const Organizations = () => {
           className="w-68 object-cover rounded-lg "
         />
         <div className="w-full text-left">
-          <h2 className="text-4xl sm:text-6xl font-bold text-neutral-900 mb-3 md">
+          <h2 className="text-4xl sm:text-6xl font-bold text-neutral-900 mb-3">
             The Foundation of AGGBA
           </h2>
           <p className="text-neutral-900 text-xl leading-relaxed text-justify">
@@ -48,6 +48,85 @@ const Organizations = () => {
             Asong Gubat: King, Queen, Mamanwa, Witchy, and Oriang.
           </p>
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 1.jpg"
+            alt="Molly"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Molly
+          </h3>
+          <p>0 Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 2.JPG"
+            alt="Oriang"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Oriang
+          </h3>
+          <p>2nd Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 3.JPG"
+            alt="Queen"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Queen
+          </h3>
+          <p>3rd Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 4.JPG"
+            alt="Mamanwa"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Mamanwa
+          </h3>
+          <p>3rd Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 5.jpg"
+            alt="Witchy"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Witchy
+          </h3>
+          <p>0 Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 6.JPG"
+            alt="King"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            King
+          </h3>
+          <p>3rd Generation</p>
+        </div>
+      </div>
+      <div className="py-4">
+        <p className="text-neutral-900 mx-auto text-justify text-xl px-8">
+          Join the Movement. The Asong Gubat's story is still being written, and
+          we need your help to protect this vital piece of Philippine heritage.
+          To learn more, collaborate with the student advocates, or support the
+          preservation of the "Aso species," connect with us today.
+        </p>
+        <h2 className="text-6xl font-bold text-neutral-900 mb-3 py-6 text-center underline">
+          Aso ng Gubat Genetic Breeders Association Inc. (AGGBA)
+        </h2>
       </div>
     </Layout>
   );
