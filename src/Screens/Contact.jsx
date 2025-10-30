@@ -8,7 +8,7 @@ const Contact = () => {
     <Layout>
       <div
         className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-24 space-y-8 lg:space-y-0 lg:space-x-8 bg-cover bg-center"
-        style={{ backgroundImage: "url('/forest.jpg')" }}
+        style={{ backgroundImage: "url('/CONTACTS PHOTO.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center flex-col sm:flex-row gap-8">
           <div className="flex flex-col w-full lg:w-1/2 items-start space-y-2 text-left text-white px-6 sm:px-6 md:px-6 lg:px-24">

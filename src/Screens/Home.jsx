@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Layout>
       <div
-        className="relative min-h-screen flex items-center bg-cover bg-center sm:bg-[center_bottom_-8rem] lg:bg-[center_bottom_-14rem] p-8 sm:p-16"
+        className="relative min-h-screen flex items-center bg-cover bg-center sm:bg-[center_bottom_-8rem] lg:bg-[center_bottom_-16rem] p-8 sm:p-16"
         style={{ backgroundImage: "url(/landing.JPG)" }}
       >
         <div className="absolute inset-0 bg-lime-800/20">
