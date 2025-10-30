@@ -30,19 +30,24 @@ const Organizations = () => {
         <img
           src="org2.JPG"
           alt="Organization"
-          className="w-72 object-cover rounded-lg "
+          className="w-68 object-cover rounded-lg "
         />
-        <p className="text-neutral-900 text-xl leading-relaxed">
-          The movement to protect this "living archive of Philippine heritage"
-          is often sparked by a deeply personal encounter. For Ms. Zenaida
-          Jacaba, also known as Aida Espera, that moment began with a dog named
-          'Molly' found near a road in Bulacan. Six months after Molly's
-          adoption, Ms. Jacaba saw the striking resemblance in Tom Asmus's
-          YouTube videos, leading to an exchange of information and the eventual
-          founding of the AGGBA with two other collaborators. Ms. Jacaba, now
-          the current AGGBA Treasurer, proudly cares for five Asong Gubat: King,
-          Queen, Mamanwa, Witchy, and Oriang.
-        </p>
+        <div className="w-full text-left">
+          <h2 className="text-4xl sm:text-6xl font-bold text-neutral-900 mb-3 md">
+            The Foundation of AGGBA
+          </h2>
+          <p className="text-neutral-900 text-xl leading-relaxed text-justify">
+            The movement to protect this "living archive of Philippine heritage"
+            is often sparked by a deeply personal encounter. For Ms. Zenaida
+            Jacaba, also known as Aida Espera, that moment began with a dog
+            named 'Molly' found near a road in Bulacan. Six months after Molly's
+            adoption, Ms. Jacaba saw the striking resemblance in Tom Asmus's
+            YouTube videos, leading to an exchange of information and the
+            eventual founding of the AGGBA with two other collaborators. Ms.
+            Jacaba, now the current AGGBA Treasurer, proudly cares for five
+            Asong Gubat: King, Queen, Mamanwa, Witchy, and Oriang.
+          </p>
+        </div>
       </div>
     </Layout>
   );
