@@ -56,7 +56,7 @@ const Organizations = () => {
           Documented Asong Gubat
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+      <div className="grid grid-cols- md:grid-cols-3 lg:grid-cols-3">
         <div className="p-8 flex items-center justify-center flex-col space-y-2">
           <img
             src="/ASO 1.jpg"
@@ -81,25 +81,14 @@ const Organizations = () => {
         </div>
         <div className="p-8 flex items-center justify-center flex-col space-y-2">
           <img
-            src="/ASO 3.JPG"
-            alt="Oriang"
+            src="/ASO 5.jpg"
+            alt="King"
             className="w-56 h-56 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
-            Oriang
+            King
           </h3>
-          <p>2nd Generation</p>
-        </div>
-        <div className="p-8 flex items-center justify-center flex-col space-y-2">
-          <img
-            src="/ASO 6.JPG"
-            alt="Queen"
-            className="w-56 h-56 object-cover rounded-lg"
-          />
-          <h3 className="text-center text-neutral-950 font-bold text-lg">
-            Queen
-          </h3>
-          <p>3rd Generation</p>
+          <p>1st Generation</p>
         </div>
         <div className="p-8 flex items-center justify-center flex-col space-y-2">
           <img
@@ -110,18 +99,29 @@ const Organizations = () => {
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Mamanwa
           </h3>
-          <p>3rd Generation</p>
+          <p>1st Generation</p>
         </div>
         <div className="p-8 flex items-center justify-center flex-col space-y-2">
           <img
-            src="/ASO 5.jpg"
-            alt="King"
+            src="/ASO 6.JPG"
+            alt="Queen"
             className="w-56 h-56 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
-            King
+            Queen
           </h3>
-          <p>3rd Generation</p>
+          <p>1st Generation</p>
+        </div>
+        <div className="p-8 flex items-center justify-center flex-col space-y-2">
+          <img
+            src="/ASO 3.JPG"
+            alt="Oriang"
+            className="w-56 h-56 object-cover rounded-lg"
+          />
+          <h3 className="text-center text-neutral-950 font-bold text-lg">
+            Oriang
+          </h3>
+          <p>2nd Generation</p>
         </div>
       </div>
       <div className="py-8">
