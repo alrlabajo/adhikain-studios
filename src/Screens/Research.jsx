@@ -143,7 +143,7 @@ const History = () => {
             alt="Asong Gubat howling"
             className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 object-cover rounded-lg md:rounded-none"
           />
-          <div className="w-full md:w-1/2 text-left md:text-right">
+          <div className="w-full md:w-1/2">
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-3 md">
               Unique Traits
             </h2>
@@ -189,7 +189,7 @@ const History = () => {
           </div>
 
           <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
-            <div className="w-full md:w-1/2 text-left md:text-right">
+            <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold text-neutral-900">Jungle</h2>
               <p className="text-neutral-900 text-base leading-relaxed">
                 Characterized as a lean-built landrace—meaning a local variety
@@ -221,7 +221,7 @@ const History = () => {
             </div>
           </div>
           <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
-            <div className="w-full md:w-1/2 text-left md:text-right">
+            <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold text-neutral-900">Tribal</h2>
               <p className="text-neutral-900 text-base leading-relaxed">
                 Characterized by a tribal/mountain landrace body, this variant
@@ -255,91 +255,65 @@ const History = () => {
             </div>
           </div>
         </div>
+        <p className=" text-neutral-900 text-lg p-8 text-justify">
+          In his research, Tom Asmus found that cross-variant dogs are commonly
+          referred to as "tribal." Lacking traditional genealogical records, he
+          asserted that ear shape is the most reliable feature for determining
+          the lineage and heritage of the diverse Aso species. Although there
+          are already known variants, he also noted the different body types of
+          an Aso species.
+        </p>
 
-        <div className="p-8 sm:p-12 space-y-14">
-          <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-center text-neutral-900">
-              Body Types of Asong Gubat
-            </h1>
-
-            <p className="text-center text-neutral-700 text-lg">
-              In his research, Tom Asmus found that cross-variant dogs are
-              commonly referred to as "tribal." Lacking traditional genealogical
-              records, he asserted that ear shape is the most reliable feature
-              for determining the lineage and heritage of the diverse Aso
-              species. Although there are already known variants, he also noted
-              the different body types of an Aso species.
-            </p>
-          </div>
-
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className="bg-orange-100">
+          <div className="flex flex-col lg:flex-row lg:h-full">
             <img
-              src="/body_jungle.png"
-              alt="Asong Gubat - Jungle"
-              className="w-56 object-cover rounded-lg md:rounded-none"
+              src="/research4.jpg"
+              alt="Asong Gubat"
+              className="w-full lg:w-1/2 h-1/2 object-cover"
             />
-            <div className="w-full md:w-1/2 text-left">
-              <h2 className="text-3xl font-bold text-neutral-900">Jungle</h2>
-              <p className="text-neutral-900 text-base leading-relaxed">
-                This specialized type possesses a tall, slender profile built
-                for speed and power. Its distinctive anatomy—featuring a large
-                dip in the spine behind the shoulders and long hip
-                bones—facilitates its leaper and lunger hunting style. The
-                profile is completed by a thin, elongated skull.
+            <div className="p-6 space-y-3 text-justify w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
+              <p className="text-neutral-900 text-sm leading-relaxed">
+                <span className="font-bold">Jungle:</span> This specialized type
+                possesses a tall, slender profile built for speed and power. Its
+                distinctive anatomy—featuring a large dip in the spine behind
+                the shoulders and long hip bones—facilitates its leaper and
+                lunger hunting style. The profile is completed by a thin,
+                elongated skull.
+              </p>
+              <p className="text-neutral-900 text-sm leading-relaxed">
+                <span className="font-bold">Mountain:</span> Representing over
+                75% of the population, this is the most common Asong Gubat type.
+                It has a midsized, sturdy body profile structurally adapted for
+                challenging environments. Key climbing features include a mid
+                dip in the spine and long hip bones specifically designed for
+                climbing rugged terrain.
+              </p>
+              <p className="text-neutral-900 text-sm leading-relaxed">
+                <span className="font-bold">Lowland:</span> This variant is
+                defined by an agile structure that facilitates movement. It
+                features a wide and smoothly curved spine and a wedge-shaped
+                skull. Its layered body is designed for superior performance,
+                enabling the dog to both climb and leap effectively.
+              </p>
+              <p className="text-neutral-900 text-sm leading-relaxed">
+                <span className="font-bold">Dwarf:</span> This short-legged
+                variant is renowned as a powerful digger, capable of excavating
+                ground prey like lizards and rodents even in areas with a low
+                center of gravity. Commonly raised by the Igorot people in
+                Northern Luzon for hunting, this dog typically presents with a
+                wedge-shaped skull and a coat that is cream/creme, black
+                bobtail, or brindle.
+              </p>
+              <p className="text-neutral-900 text-xs leading-relaxed italic mt-6">
+                Photo Courtesy of DogPack on{" "}
+                <a
+                  href="https://www.dogpackapp.com/blog/dog-breeds/aso-ng-gubat-philippine-forest-dog/ebook.com/dogpackph"
+                  className="text-neutral-900 underline"
+                >
+                  Aso Ng Gubat (Philippine Forest Dog)
+                </a>
               </p>
             </div>
-          </div>
-          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
-            <div className="w-full md:w-1/2 text-left md:text-right">
-              <h2 className="text-3xl font-bold text-neutral-900">Mountain</h2>
-              <p className="text-neutral-900 text-base leading-relaxed">
-                Representing over 75% of the population, this is the most common
-                Asong Gubat type. It has a midsized, sturdy body profile
-                structurally adapted for challenging environments. Key climbing
-                features include a mid dip in the spine and long hip bones
-                specifically designed for climbing rugged terrain.
-              </p>
-            </div>
-            <img
-              src="/body_mountain.png"
-              alt="Asong Gubat - Mountain"
-              className="w-56 object-cover rounded-lg md:rounded-none"
-            />
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <img
-              src="/body_lowland.png"
-              alt="Asong Gubat - Lowland"
-              className="w-56 object-cover rounded-lg md:rounded-none"
-            />
-            <div className="w-full md:w-1/2 text-left">
-              <h2 className="text-3xl font-bold text-neutral-900">Lowland</h2>
-              <p className="text-neutral-900 text-base leading-relaxed">
-                This variant is defined by an agile structure that facilitates
-                movement. It features a wide and smoothly curved spine and a
-                wedge-shaped skull. Its layered body is designed for superior
-                performance, enabling the dog to both climb and leap
-                effectively.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
-            <div className="w-full md:w-1/2 text-left md:text-right">
-              <h2 className="text-3xl font-bold text-neutral-900">Dwarf</h2>
-              <p className="text-neutral-900 text-base leading-relaxed">
-                This short-legged variant is renowned as a powerful digger,
-                capable of excavating ground prey like lizards and rodents even
-                in areas with a low center of gravity. Commonly raised by the
-                Igorot people in Northern Luzon for hunting, this dog typically
-                presents with a wedge-shaped skull and a coat that is
-                cream/creme, black bobtail, or brindle.
-              </p>
-            </div>
-            <img
-              src="/body_dwarf.png"
-              alt="Asong Gubat - Dwarf"
-              className="w-56 object-cover rounded-lg md:rounded-none"
-            />
           </div>
         </div>
 
@@ -441,55 +415,39 @@ const History = () => {
           </div>
         </div>
 
-        <div className="p-8 sm:p-12 space-y-14">
-          <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-center text-neutral-900">
-              Nail Structure of Asong Gubat
-            </h1>
-
-            <p className="text-center text-neutral-700 text-lg">
-              Finally, extending to the very extremities, the Aso species
-              completes its diverse profile with distinct variations in its claw
-              arches. These arches, which can serve as a blend identifier,
-              include:
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
-              <img src="/jungle_nail.png" alt="Jungle Nail" className="w-36" />
-              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
-                Jungle Type
-              </h3>
-              <p className="text-sm text-yellow-50 text-justify">
-                Characterized by the longest claws with a shallow 30-degree arc.
+        <div className="bg-lime-600/20 gap-16">
+          <div className="flex flex-col lg:flex-row lg:h-full">
+            <img
+              src="/nails.jpg"
+              alt="Asong Gubat Nails"
+              className="w-full sm:w-1/4 h-auto object-cover"
+            />
+            <div className="p-6 space-y-1 text-justify w-full">
+              <p className="text-neutral-900 text-base leading-relaxed">
+                <span className="font-bold">Jungle:</span> Characterized by the
+                longest claws with a shallow 30-degree arc, the Jungle variety
+                thrives in dense forest environments where grip and silent
+                movement are essential. Their elongated claws allow them to dig,
+                climb, and navigate uneven terrain efficiently, making them
+                agile hunters and survivors in thick vegetation.
               </p>
-            </div>
-            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
-              <img
-                src="/lowland_nail.png"
-                alt="Lowland Nail"
-                className="w-36"
-              />
-              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
-                Lowland Type
-              </h3>
-              <p className="text-sm text-yellow-50 text-justify">
-                Features the shortest claws with a wide 70-degree arc, giving
-                them a feline-like appearance.
+              <p className="text-neutral-900 text-base leading-relaxed">
+                <span className="font-bold">Mountain:</span> Features the
+                shortest claws with a wide 70-degree arc, giving them a
+                feline-like appearance suited for steep and rocky landscapes.
+                This variety is built for stability and strength, often
+                displaying a more muscular frame and thicker pads to endure the
+                cold, harsh elevations. Their claws act almost like natural
+                crampons—short, strong, and perfect for gaining traction on
+                jagged surfaces.
               </p>
-            </div>
-            <div className="bg-yellow-950 flex items-center justify-center flex-col p-8">
-              <img
-                src="/mountain_nail.png"
-                alt="Mountain Nail"
-                className="w-36"
-              />
-              <h3 className="text-center font-bold text-neutral-50 text-lg py-4">
-                Mountain Type
-              </h3>
-              <p className="text-sm text-yellow-50 text-justify">
-                Represents the most common variety, identified by a moderate
-                45-degree arc.
+              <p className="text-neutral-900 text-base leading-relaxed">
+                <span className="font-bold">Lowland:</span> Represents the most
+                common variety, identified by a moderate 45-degree arc.
+                Adaptable and versatile, the Lowland type can thrive in both
+                rural and semi-urban settings. Their claws balance endurance and
+                dexterity, enabling them to traverse soft soil, open plains, and
+                human-inhabited environments with ease.
               </p>
             </div>
           </div>
@@ -508,20 +466,23 @@ const History = () => {
           </p>
         </div>
       </div>
-      <div
-        className="min-h-screen bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/research3.JPG')" }}
-      >
-        <div className="absolute inset-0 bg-amber-950/30 flex items-center justify-center min-h-screen">
-          <div className="text-center px-4">
-            <p className="mt-4 text-2xl text-white text-shadow-lg/10 italic">
-              "Aso are a very ancient breed, having lived here for 30,000 -
-              150,000 Years that appeared to have ties with the Negrito Tribes
-              which were the first sundaland people who inhabited South East
-              Asia”.<br /><span className="font-bold">- Asmus, 2018</span>
-            </p>
-          </div>
+
+      <div className="bg-yellow-700/20 flex flex-col sm:flex-row">
+        <div className="flex justify-center items-center">
+          <p className="text-justify w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 text-xl italic">
+            "Aso are a very ancient breed, having lived here for 30,000 -
+            150,000 Years that appeared to have ties with the Negrito Tribes
+            which were the first sundaland people who inhabited South East
+            Asia”.
+            <br />
+            <span className="font-bold">- Asmus, 2018</span>
+          </p>
         </div>
+        <img
+          src="/research3.JPG"
+          alt="Asong Gubat"
+          className="h-96 object-cover"
+        />
       </div>
     </Layout>
   );

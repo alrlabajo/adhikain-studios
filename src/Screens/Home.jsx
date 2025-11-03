@@ -19,7 +19,7 @@ const Home = () => {
             <p className="mt-4 text-lg sm:text-2xl text-white max-w-3xl text-shadow-lg/10">
               The Philippines’ Hidden, Living Legacy.
               <br />
-              Our Creative Call to Action.
+              Our Creative Call to Action
             </p>
             <div className="mt-6">
               <button className="bg-green-900 text-white px-6 py-3 rounded-full text-base hover:bg-green-800 transition duration-300">

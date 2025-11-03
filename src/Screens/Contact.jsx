@@ -12,11 +12,11 @@ const Contact = () => {
       >
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center flex-col sm:flex-row gap-8">
           <div className="flex flex-col w-full lg:w-1/2 items-start space-y-2 text-left text-white px-6 sm:px-6 md:px-6 lg:px-24">
-            <h1 className="text-7xl xl:text-8xl ">Get in Touch</h1>
-            <p className="text-base">
+            <h1 className="text-7xl xl:text-8xl font-bold">Get in Touch</h1>
+            <p className="text-lg md:text-xl lg:text-lg xl:text-xl text-shadow-lg/20">
               We would love to hear from you! Whether you have questions about
               our projects, want to collaborate, or just want to say hello, feel
-              free to reach out to us through any of the following channels:
+              free to reach out to us through any of the following channels
             </p>
           </div>
 

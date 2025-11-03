@@ -61,7 +61,7 @@ const Organizations = () => {
           <img
             src="/ASO 1.jpg"
             alt="Molly"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Molly
@@ -72,7 +72,7 @@ const Organizations = () => {
           <img
             src="/ASO 2.JPG"
             alt="Witchy"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Witchy
@@ -83,7 +83,7 @@ const Organizations = () => {
           <img
             src="/ASO 5.jpg"
             alt="King"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             King
@@ -94,7 +94,7 @@ const Organizations = () => {
           <img
             src="/ASO 4.JPG"
             alt="Mamanwa"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Mamanwa
@@ -105,7 +105,7 @@ const Organizations = () => {
           <img
             src="/ASO 6.JPG"
             alt="Queen"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Queen
@@ -116,7 +116,7 @@ const Organizations = () => {
           <img
             src="/ASO 3.JPG"
             alt="Oriang"
-            className="w-56 h-56 object-cover rounded-lg"
+            className="w-72 h-80 object-cover rounded-lg"
           />
           <h3 className="text-center text-neutral-950 font-bold text-lg">
             Oriang
